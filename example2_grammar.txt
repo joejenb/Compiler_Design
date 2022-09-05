@@ -1,0 +1,21 @@
+For the language given, the corresponding grammar of valid FO formula is given by
+	G = {
+		T = {P Q w x y z C D = \land \lor \implies \iff \exists \forall \neg ( ) ,}, 
+		N = {Form Var Brack VarConst Const BCon UCon Equal Quan Pred2 Pred1}, 
+		P, 
+		Form
+	}
+Where P includes:
+		Form -> Quan Var Form | UCon Form | ( Brack ) | Pred2 ( Var , Var ) | Pred1 ( Var )
+		VCon -> Var | Const
+		Var -> w | x | y | z
+		Brack -> Const Equal VCon | Var Equal VCon | Form BCon Form
+		Const -> C | D
+		UCon -> \neg
+		BCon -> \land | \lor | \implies | \iff
+		Equal -> =
+		Quan -> \exists | \forall
+		Pred2 -> P
+		Pred1 -> Q
+
+

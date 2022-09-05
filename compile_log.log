@@ -1,0 +1,9 @@
+example1.txt	13 Mar 13:40	Valid		The file provided is of the correct format and the formula is valid
+ 
+example2.txt	13 Mar 13:40	Invalid		Error on line 0 at position 9, x must be followed by a comma
+            	            	Invalid		Error on line 0 at position 11, formulae can only be followed by a binary conjunctive not \neg
+            	            	Invalid		Error on line 1 at position 9, missing ")"
+ 
+example3.txt	13 Mar 13:42	Invalid		Error on line 1 at position 7, C must be followed by the equality symbol here
+            	            	Invalid		Error on line 1 at position 12, z must be followed by the equality symbol here
+ 

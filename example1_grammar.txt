@@ -1,0 +1,22 @@
+For the language given, the corresponding grammar of valid FO formula is given by
+	G = {
+		T = {Same Non_zero notEqual == AND OR IMPLIES IFF E A price cost1 30 Z NOT ( ) ,}, 
+		N = {Form Var Brack VarConst Const BCon UCon Equal Quan Pred2 Pred1 Pred3}, 
+		P, 
+		Form
+	}
+Where P includes:
+		Form -> Quan Var Form | UCon Form | ( Brack ) | Pred2 ( Var , Var ) | Pred1 ( Var ) | Pred3 ( Var , Var , Var )
+		VCon -> Var | Const
+		Var -> price | cost1
+		Brack -> Const Equal VCon | Var Equal VCon | Form BCon Form
+		Const -> 30 | Z
+		UCon -> NOT
+		BCon -> AND | OR | IMPLIES | IFF
+		Equal -> ==
+		Quan -> E | A
+		Pred2 -> Same
+		Pred1 -> Non_zero
+		Pred3 -> notEqual
+
+
